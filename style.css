@@ -1,0 +1,485 @@
+/* colors
+#f9f5f0; ivory 
+#f4c74b; yellow
+#c4842e ; brown*/
+
+@charset "UTF-8";
+
+/* Default styling */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  color: #1e1818; /* Warm black */
+}
+
+img, video {
+  width: 100%;
+  display: block;
+}
+
+/* Default font styles */
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+
+a{
+color: #1e1818; /*warm black*/ 
+text-decoration: none;
+}
+
+
+a:hover {
+cursor:pointer;
+color: #c4842e; /*brown*/
+}
+
+p { /*body copy*/
+  font-size: 20px;
+  line-height: 38px;
+  font-weight: 400;
+}
+
+h1 { /*headline 1*/
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 700;
+}
+
+h2 { /*headline 2*/
+  font-size: 40px;
+  line-height: 64px;
+  font-weight: 700;
+}
+
+h3 { /*subhead*/
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+h4 { /*button*/
+  font-size: 34px;
+  line-height: 48px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h5 { /*tittle, menu, label*/
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+h6 { /* subtitle, footer*/
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+/*General styling elements*/
+strong{
+color: #1e1818;
+}
+
+#regularfont{
+font-weight:400;
+}
+
+#aligncenter {
+text-align: center;
+}
+
+.borderbox{
+    border: solid #1e1818 2px;
+}
+
+.screenwidth{
+width: 80%;
+margin: 0 auto;
+}
+
+/* Button setting */
+
+.button {
+display: inline-block; /* Ensures the div wraps the text content */
+margin: 0 auto; /* center the button */
+padding: 10px 20px 10px 20px;
+border: solid #1e1818 2px;
+border-radius: 15px;
+box-shadow: 8px 8px #1e1818; /* Solid black shadow */
+background-color: #f4c74b; /*yellow*/
+}
+
+.button:hover {
+  background-color: #cbb9fc; /* purple */
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+  color: #1e1818;
+}
+
+
+/*Label setting*/
+
+.label{
+background-color: #f4c74b; /*yellow*/
+position: absolute; /* Optional, if you need more precise control */
+right: 0; /* Moves the .label div to the right edge of the .overlay */
+/*default setting for label from here*/
+display: inline-block; /* Ensures the div wraps the text content */
+margin: 20px;
+padding: 5px 10px 5px 10px;
+border-radius: 50px;
+text-align: center;
+border: solid #1e1818 2px;}
+
+.label h5 {
+font-weight: 400;
+color: #1e1818;
+}
+
+
+/*label color options setting*/
+    
+#label-white{
+  background-color:#f9f5f0; /*ivory*/  
+    }
+
+
+/* Menu Bar */
+
+.gapband{
+    height:70px; /*same height with .menu*/    
+}
+
+.menubar a:hover{
+color:#1e1818;
+}
+.menubar {
+    height: 70px; /* Same height as .gapband */
+    width: 100%;
+    max-width: 1920px;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    }
+
+.menubar-col1, .menubar-col2, .menubar-col3 {
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+    display: flex;
+    align-items: center; /* Vertically centers the image */
+    justify-content: center; /* Horizontally centers the image */
+}
+
+.menubar-col1, .menubar-col3 {
+    width: 10%;
+}
+
+
+.menubar-col2 {
+    width: 80%;
+    border-left: none;
+    border-right: none;
+}
+
+.menubar-col2 img {
+    width: 90px;
+}
+
+.menubar-col1:hover .rotate-hover, .menubar-col3:hover .rotate-hover {
+    transform: rotate(10deg);
+    transition: transform 0.3s ease; /* Adds smooth transition */
+}
+
+#burgericon{
+font-size: 14px;
+}
+/*dropdown animation for burger menu*/
+
+.menubar-col3 {
+  position: static; /*make the width full screen*/
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  visibility: hidden; /* Initially hidden */
+  opacity: 0; /* Invisible by default */ 
+  transform: translateX(20px); /* Start slightly off-screen (right) */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth animation */
+}
+
+.menubar-col3:hover .dropdown {
+  visibility: visible; /* Make it visible */
+  opacity: 1; /* Fully opaque */
+  transform: translateY(0); /* Slide into position */
+  z-index: 1;
+  
+}
+
+/* style for burger menu*/
+
+.dropdown li {
+    list-style: none;
+    padding: 20px 28px 20px 0;
+    text-align: right;
+}
+
+#li1{
+    background-color:#f4c74b; /*yellow*/
+    border-top:none;
+}
+
+#li2{
+    background-color: #9be4cd; /*mint*/
+    border-top:none;
+    border-bottom:none;
+}
+
+#li3{
+    background-color: #aad9e8; /*blue*/
+}
+
+#li1:hover, #li2:hover, #li3:hover, menubar-col1:hover{
+    background-color: white;
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+    
+}
+
+/* Portfolio thumbnails setting*/
+
+.portfolio h6{
+font-style: italic;
+}
+
+.portfolio-container, .portfolio {
+display: flex;
+margin:0 auto;
+}
+
+.portfolio, .column1, .column2, .column3, .column4  {
+  flex: 1;}
+
+.column1{
+margin: 0 0 0 40px;
+}
+
+.column2{
+margin: 0 20px 0 40px;
+}
+
+.column3{
+margin: 0 40px 0 20px;
+}
+
+.column4{
+margin: 0 40px 0 0;
+}
+
+.thumbnail {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+
+}
+
+.portfolio-card{
+padding-bottom: 50px;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay{
+background-color:rgba(0,0,0,0.5); 
+position: absolute;
+width: 100%;
+height:100%;
+opacity: 0;}
+
+.thumbnail:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity on hover */
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.thumbnail:hover .image img{
+transform: scale(1.2);
+transition:all 0.5s ease-out;}
+
+.thumbnail:hover .overlay {
+opacity: 1;
+z-index: 1;
+transition: all 0.5s ease-out;}
+
+.title {
+  margin: 10px 0 0 0;
+  text-align: left; /* Align title text to the left */
+}
+
+/* end of Portoflio*/
+
+/*RESPONSIVE */
+
+@media screen and (max-width: 1400px) /*ipad pro*/{
+    
+
+} /*end of ipad pro*/
+
+@media screen and (max-width: 1100px) /*ipad mini */ {
+    
+/*menu*/
+    
+.menubar-col1, .menubar-col3 {
+    width: 15%;
+}
+
+.menubar-col2 {
+    width: 70%;
+}
+    
+/*portfolio*/
+    
+.portfolio-container{
+display: flex;}   
+    
+.portfolio { display: inline-block;}
+    
+.column1, .column2{
+margin: 0 20px 0 40px;
+}
+
+.column3, .column4 {
+margin: 0 40px 0 20px;
+}
+
+    
+} /*end of ipad mini responsive*/
+
+@media screen and (max-width: 700px) /*iphone */ {
+        
+/*font styles*/
+    
+p{ /*body font*/
+font-size: 16px;
+line-height: 30px;
+}
+
+h1 { /*headline 1*/
+font-size: 36px;
+line-height: 44px;
+}
+
+h2 { /*headline 2*/
+font-size: 24px;
+line-height: 40px;
+}
+    
+h3{  /*subhead*/
+font-size: 18px;
+line-height: 28px;
+}
+    
+h4{ /*button*/
+font-size: 24px;
+line-height: 36px;
+}
+
+h5 { /*tittle,, menu, label*/
+font-size: 14px;
+line-height: 20px;
+}
+
+h6 { /*subtitle, footer*/
+font-size: 12px;
+line-height: 20px;
+}
+  
+ /*General styling elements*/    
+.screenwidth{
+width: 90%;
+}   
+    
+.bg-default{
+padding:70px 0 ; /*margin top and bottom of each section*/
+}
+   
+ /*button setting*/
+    
+    
+/*Label*/
+    
+.label{
+ margin: 10px;
+}
+    
+ /*Menu bar*/
+    
+.menubar-col1, .menubar-col3 {
+    width: 22%;
+}
+
+.menubar-col2 {
+    width: 56%;
+}
+    
+.menubar, .gapband {
+    height: 60px; /* Same height as .gapband */
+} 
+      
+.menubar-col2 img {
+    width: 70px;
+}
+    
+.dropdown li {
+    padding: 15px 21px 15px 0;
+}
+    
+#burgericon{
+font-size: 12px;
+}
+   
+/*portfolio setting*/
+    
+.column1, .column2{
+margin: 0 8px 0 16px;
+}
+
+.column3, .column4 {
+margin: 0 16px 0 8px;
+}
+  
+.portfolio-card{
+padding-bottom: 30px;
+}
+    
+/*portfolio card*/
+    
+.thumbnail {
+  border-radius: 10px;
+}
+    
+}/*end of phone 700px responsive */
+
+@media screen and (max-width: 400px) /*iphone small */ {
+ 
+}
+

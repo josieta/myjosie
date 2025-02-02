@@ -1,0 +1,271 @@
+@charset "UTF-8";
+
+/*footer*/
+
+.footer {
+margin: 0 auto;
+padding-bottom: 20px;
+}
+
+/*connect section*/
+
+.connect-container{
+background-color: #f9f5f0;
+position: relative;/* its children stay inside - relate to the position: absolute of the window-and-stars child */
+
+}
+
+.connect {
+padding: 112px 0 66px 0; /*2.5 cm*/
+z-index: 2;
+position: relative; /*work with z-index to appear overlay of the window and stars div */
+}
+
+.connect h1{
+padding-bottom: 25px; /*1cm*/
+}
+.connect-col{
+display: flex;
+}
+.connect-col1 {
+width:60%;
+}
+
+.connect-col1 p{
+width: 570px;
+}
+.connect-col2 {
+display: flex;
+width:40%;
+align-items: flex-start; /* Aligns items to the top */
+justify-content: flex-end; /* Aligns items to the right */
+}
+
+.connect-col2-1{
+padding-right: 40px;
+}
+
+.connect-col3 {
+margin-left: auto;
+}
+
+.email-link {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.email-link:hover, .connect-col2 p:hover {
+color: #c4842e; /*brown*/
+transition: color 0.3s ease; /* Smooth transition effect */
+}
+
+.connect-col2 p {
+padding-bottom: 15px;
+} 
+
+
+/* window and stars decor*/
+
+.window-and-stars {
+     position: absolute; /* Make the element absolutely positioned */
+    top: 0; /* Align it to the top of the parent */
+    right: 0; /* Align it to the right of the parent */
+    display: flex;
+    align-items:baseline; /* align images bottom */
+    width: 50%; 
+    padding-top: 50px;
+    z-index: 1;
+}
+
+.wns-grid, .wns-grid2 {
+    flex: 1 ;
+    text-align: center; /* Centers images inside each grid */
+}
+
+
+#window {width: 180px;
+}
+
+
+#blackdiamond {
+width: 10px;
+margin-bottom: 230px;
+}
+
+#tealdot{
+width: 13px;
+margin-bottom: 165px;
+}
+
+#yellowsparkling1 {
+width: 20px;
+margin-bottom: 260px;
+}
+
+#threediamonds {
+width: 30px;
+margin-bottom: 230px;
+}
+
+
+#cloud {
+width: 180px;
+margin-bottom: 180px;
+}
+
+#pinksquare{
+width: 10px;
+margin-bottom: 286px;
+}
+
+#yellowsparkling2 {
+width: 20px;
+margin-bottom: 200px;
+}
+
+#whitestar {
+width: 25px;
+margin-bottom: 250px;
+}
+
+
+#blackheart {
+width: 20px;
+margin-bottom: 160px;
+}
+/*Pop up from sesame open*/
+
+ .image-container {
+position: relative;
+padding-top: 30px;
+
+}
+
+
+      .pop-up {
+  position: absolute;
+  width: 200px;
+  bottom: 70%; /* Position above the image */
+  left: 50%;
+  transform: translate(-50%, 20px); /* Start slightly below the final position */
+  opacity: 0;
+  background-color: #cbb9fc; /* purple*/
+  padding: 15px;
+  border-radius: 15px;
+  border: solid #1e1818 2px;
+  word-wrap: break-word;
+  transition: all 0.5s ease; /* Smooth animation */}
+
+.pop-up h5, .pop-up h6{
+font-size: 12px;
+text-align: center;
+line-height: 20px;
+font-style: normal;
+}
+
+ .image-container:hover .pop-up {
+  bottom: 80%; /* Final position above the image */
+  transform: translate(-50%, -10px); /* Slide up */
+  opacity: 1; /* Fade in */}
+
+
+/*RESPONSIVE */
+
+@media screen and (max-width: 1400px) /*ipad pro */{
+    
+.connect-col1 p{
+width: 75%;
+}
+}/*end of ipad pro*/
+
+
+@media screen and (max-width: 1100px) /*ipad mini */ {
+    
+/* connect*/
+ 
+.connect-col{
+display:block;
+
+}
+.connect-col1, .connect-col2 {
+width: 100%;
+}
+
+
+ .connect{
+padding-bottom: 94px; /*2.5cm*/
+    }
+ 
+.connect-col2{
+padding-top: 26px;/*1cm*/
+}    
+      
+
+/*window and stars*/
+    
+.wns-grid2 {
+display: none;
+    }
+
+#blackdiamond {
+
+margin-bottom: 275px;
+}
+
+#tealdot{
+
+margin-bottom: 250px;
+}
+
+    #yellowsparkling1 {
+    margin-bottom: 280px
+    }
+
+    
+} /* end of ipad mini responsive*/
+
+@media screen and (max-width: 700px) /*iphone */ {
+    
+    /* connect*/
+    
+.connect {
+padding: 68px 0 70px 0; /*2.5cm scale to 1.5cm*/
+}
+    
+.connect h1{
+padding-bottom: 20px; /*1cm scale to 0.7cm*/
+}    
+    
+.connect-col2{
+padding-top: 20px;/*1cm scale to 0.7cm*/
+}  
+
+    
+.connect-col1 p{
+    width: 100%;
+    }
+    
+.connect-col2{
+flex-wrap: wrap;
+justify-content:flex-start; /* Aligns items to the right */
+}
+       
+.connect-col3 {
+width: 100%;
+}
+  
+#window {
+width: 120px;
+}   
+    
+ .image-container {
+padding-top: 16px; /* 1cm scale to 0.7cm*/}
+ 
+/*window and stars*/
+
+
+ .wns-grid {
+display: none;
+    }
+
+}

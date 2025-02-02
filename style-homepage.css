@@ -1,0 +1,829 @@
+@charset "UTF-8";
+
+
+/*space between contents*/
+#bg-intro{
+padding: 112px 0 135px 0; /*2.5cm*/
+}
+
+#button-intro{
+margin-top: 62px; /*1.5cm*/
+}
+
+#bg-services{
+padding: 112px 0 146px 0; /*2.5cm*/
+}
+
+#bg-services h1{
+padding-bottom:34px ; /*1.5cm*/
+}
+
+#bg-mypersona{
+padding: 50px 0 72px; /*3cm*/
+}
+
+#bg-mypersona h2, .line-one h1{
+padding-bottom: 22px; /*1cm*/
+}
+
+
+#bg-artwork{
+padding: 104px 0 135px 0; /*2.5cm*/
+}
+
+#artwork-container{
+padding: 64px 0 22px 0; /*1.5cm*/
+}
+
+#bg-sa{
+padding-top: 112px;
+}
+
+/* Hero section style*/
+.illus-container{
+height: auto;
+width: 1920px;
+overflow-x: hidden;
+overflow-y:visible;
+position: absolute;
+left: 50%; /* Start positioning from the center horizontally */
+transform: translateX(-50%); /* Center the image horizontally */
+z-index:1;
+background-color: #f9f5f0; /*ivory*/
+padding-top: 50px;/*space between items*/
+}
+
+.bunny {
+margin-top:-536px;
+}
+
+.illus-grid1{
+display: flex;
+width: 100%;
+position: absolute;
+}
+
+.illus-grid-left, .illus-grid-right, .illus-grid-center {
+display: flex;
+justify-content: center; /* Center horizontally its child .column */
+}
+
+.illus-grid-left, .illus-grid-right{
+width: 45%;
+}
+
+.illus-grid-center{
+width: 10%;
+margin: 15px 20px 0 20px;}
+
+
+.illus-col1 {
+flex: 1;
+}
+
+.illus-col1 img{
+margin: 0 auto; /*align image in center of div*/
+}
+
+.illus-grid2{
+display:flex;
+align-items:baseline; /* align images bottom */
+}
+
+/* Stars size and height */
+#illus-cloud {
+  width: 210px;
+  margin-top: 50px;
+}
+
+#illus-blackdiamond {
+  width: 10px;
+  margin: 40px 20px 0 20px;
+}
+
+#illus-pinksparklingstar {
+  width: 28px;
+  margin-top: 300px;
+}
+
+#illus-linediamond {
+  width: 33px;
+}
+
+#illus-3diamonds {
+  width: 30px;
+  margin-top: 200px;
+}
+
+#illus-flowers {
+  width: 126px;
+  margin-top: 80px;
+}
+
+#illus-yellowsparklingstar {
+  width: 20px;
+  margin-top: 270px;
+}
+
+#illus-tealdot {
+  width: 14px;
+}
+
+#illus-pinksquare {
+  width: 10px;
+}
+
+#illus-blackheart {
+  width: 30px;
+  margin-top: 90px;
+}
+
+#illus-linediamond-2 {
+  width: 33px;
+  margin-top: 240px;
+}
+
+#illus-pinksquare-2 {
+  width: 10px;
+  margin-top: 160px;
+}
+
+#illus-3diamonds-2 {
+  width: 30px;
+}
+
+#illus-yellowdot {
+  width: 20px;
+  margin-top: 50px;
+}
+
+/* Hands, squid, fish size and height */
+#squid {
+  margin-bottom: 400px;
+}
+
+#hand-pen {
+  margin-bottom: 50px;
+}
+
+#rainbow {
+  margin-bottom: -73px;
+}
+
+#hand-cup {
+  margin-bottom: 150px;
+}
+
+#fish {
+  margin-bottom: 600px;
+}
+
+ #handcup-smoke{
+ width: 200px;
+position: absolute;
+margin-top: -200px;
+margin-left: -15px;
+opacity: 0.95;
+}
+
+.illus-gapband{
+background-color: #f9f5f0; /*ivory*/
+height: 1010px;
+}
+/*end of hero section*/
+
+/*intro section*/
+
+#bg-intro{
+background-color: #f9f5f0; /*ivory*/
+text-align: center; /*centre the text*/
+}
+
+#bg-intro h2{
+width: 65%;
+margin: 0 auto; /*centre the text*/
+font-weight:600;
+}
+
+/*services secion */
+
+#bg-services{
+background-color:#c4842e ; /*brown*/
+}
+
+.services-container{
+display: flex;
+align-items: center; /* Vertically center its child */
+}
+
+.services-grid1{
+width: 70%;
+}
+
+.services-grid2{
+width: 30%;
+}
+
+.services-col{
+display: flex;
+}
+
+.services-col-1{
+flex:1;
+padding-right: 50px;
+}
+
+.p-list{
+border-bottom: solid #1e1818 2px;
+width: 100%;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+#hand-diamond {
+margin: 0 auto; /*center image*/
+width: 90%;
+}
+/*end of services secion */
+
+/*start my persona*/
+
+/* wavy shape code only*/
+.wave-top {
+  position: relative;
+  margin: 0;}
+
+.wave-top::before,
+.wave-top::after {}
+
+.wave-top::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 20px;
+  background-size: 40px 80px;
+  background-image: radial-gradient(circle at 20px -30px, transparent 40px, #1e1818 21px);
+}
+
+.wave-top::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 30px;
+  background-size: 80px 80px;
+  background-image: radial-gradient(circle at 20px 50px, #1e1818 40px, transparent 40px);
+}
+
+.wave-bot {
+  position: relative;
+  margin: 0;}
+
+.wave-bot::before,
+.wave-bot::after {}
+
+.wave-bot::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 20px;
+  background-size: 40px 80px;
+  background-image: radial-gradient(circle at 20px -30px, transparent 40px, #fff 21px);
+}
+
+.wave-bot::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 30px;
+  background-size: 80px 80px;
+  background-image: radial-gradient(circle at 20px 50px, #fff 40px, transparent 40px);
+}
+
+/*my persona*/
+
+#bg-mypersona{
+background-color: #1e1818;
+color: #fff;
+} 
+
+.mypersona-container1, .mypersona-container2 {
+display: flex;
+width: 100%;
+text-align: center;
+}
+
+.mypersona-container2{
+align-items: baseline;
+}
+
+.mypersona-col{
+flex:1;
+}
+
+.mypersona-col img{
+margin: 0 auto;}
+
+#symbol1 {
+width: 50px;
+}
+
+#symbol2 {
+width: 15px;
+
+}
+
+#symbol3 {
+width: 30px;
+}
+
+#symbol4 {
+width: 30px;
+
+}
+
+#symbol5 {
+width: 20px;
+margin-top: -30px;
+}
+
+#symbol6 {
+width: 50px;
+}
+
+#symbol7 {
+width: 30px;
+margin-top: -50px;
+
+}
+
+#symbol8 {
+width: 20px;
+margin-top: -25px;
+}
+
+#symbol9 {
+width: 15px;
+
+}
+
+#symbol10 {
+width: 48px;
+}
+
+/*my persona running text*/
+.marquee-container {
+overflow-x: hidden;
+position: relative;
+margin: 0 auto;
+width: 100%;
+background-color: #1e1818;}
+
+.marquee {
+white-space: nowrap;
+margin: 0;
+padding: 0;
+}
+
+/*running animation coding*/
+        .line-one {
+            animation: scroll-left 30s linear infinite;
+        }
+
+        .line-two {
+             display: flex; /* Use flexbox to manipulate text position */
+            justify-content: flex-end; /* Align the text content to the right */
+          
+            animation: scroll-right 30s linear infinite;
+        }
+
+        @keyframes scroll-right {
+            100% {
+                transform: translateX(-50%);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+        @keyframes scroll-left {
+            100% {
+                transform: translateX(50%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+/*Artwork section*/
+
+#bg-artwork{
+background-color: #fff;
+text-align: center;
+}
+
+/*signature awards*/
+
+/* Signature awards section */
+#label-sa{
+position:inherit; /* Optional, if you need more precise control */
+margin:18px 0 18px 0; /*space between*/
+box-shadow: 6px 6px #1e1818; /* Solid black shadow */
+}
+
+#label-sa:hover {
+  background-color: #cbb9fc; /* purple */
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+#bg-sa {
+background-color: #f4c74b; /*yellow*/
+padding-bottom: 0;
+}
+
+.sa-col1 h2{
+padding-top: 24px; /*1cm*/
+}
+
+.sa-col1 a:hover{
+color: #c4842e; /*brown*/
+transition: color 0.3s ease; /* Smooth transition effect */
+}
+
+.sa-container{
+margin: 0 auto;
+}
+
+.sa-col1 {
+position: absolute;
+}
+
+.sa-col2 {
+width: 100%;
+display: flex; /*align img right*/
+justify-content: flex-end; /*align img right*/
+}
+
+.sa-col2 img {
+width: 1000px;
+margin-top: 250px;
+}
+/*end of signature awards
+
+/*RESPONSIVE */
+
+@media screen and (max-width: 1700px) /*macbook */{
+    
+/*hero section*/
+.illus-container{
+width: 1700px;
+}   
+    
+.bunny{
+margin-top:-466px;
+}
+
+#hand-cup{
+ margin: 0 0 130px 0;
+}
+    
+#illus-pinksquare {
+  padding: 440px 0 0 0;
+}
+ 
+.illus-grid-center{
+margin: 35px 20px 0 20px;}
+    
+.illus-gapband{
+background-color:#f9f5f0; /*ivory*/
+height: 980px;
+}
+
+/* end of hero section*/
+    
+} /* end of macbook responsive*/
+
+@media screen and (max-width: 1400px) /*ipad pro*/{
+    
+/* intro section*/
+#bg-intro h2{
+width:auto; /*deactive its width and apply screenwidth*/
+}
+
+/*services*/
+    
+
+    
+/*signature awards*/
+    
+.sa-col1 {
+position: relative;
+}
+
+.sa-col2 {
+width: 100%;
+}
+
+.sa-col2 img {
+width: 1000px;
+margin-top: 40px; /*1cm*/
+} 
+
+} /*end of ipad pro*/
+
+@media screen and (max-width: 1100px) /*ipad mini */ {
+    
+/* intro section*/
+#bg-intro h2{
+width:auto; /*deactive its width and apply screenwidth*/
+}
+
+/*services secion */
+.services-container{
+display:block;
+}
+
+.services-grid1, .services-grid2{
+width: 100%;
+}
+
+.services-col{
+display:block;
+}
+
+.services-col-1{
+padding-right: 0;
+}
+
+#hand-diamond {
+padding-top: 58px; /*1.5cm*/
+width: 60%;
+}
+/*end of services secion */ 
+    
+/* my persona*/
+   #col-symbol8{
+    display: none;
+    }
+    
+/*artwork*/
+
+#artwork-container{
+padding-bottom: 22px; /*1.5cm*/
+}
+    
+/*signature awards*/
+    
+.sa-col1 {
+position: relative;
+}
+
+.sa-col2 {
+width: 100%;
+}
+
+.sa-col2 img {
+width: 800px;
+margin-top: 42px; /*signature awards image space between*/
+} 
+    
+}/* end of ipad mini responsive */
+
+@media screen and (max-width: 700px) /*iphone */ {   
+    
+/*hero section*/
+.illus-container{
+width: 700px;
+}
+      
+.illus-grid-center{
+margin: 0 20px 0 20px;}   
+    
+/* these images below scale down to 0.4~0.5*/
+
+.bunny{
+    margin-top: -272px;}
+    
+#squid {
+    margin-bottom: 250px;}
+
+ #hand-pen {
+    margin-bottom: 100px;}
+
+#rainbow {
+    margin-bottom: 50px;}
+
+#hand-cup{
+    margin-bottom: 135px;}
+
+#fish {
+    margin-bottom: 350px;}
+    
+ #handcup-smoke{
+ width: 90px;
+margin-top: -90px;
+margin-left: -10px;
+}  
+    
+    
+#illus-cloud {
+width: 88px;
+margin-top: 50px;
+}
+
+#illus-blackdiamond{
+width:  5px;
+margin-top: 40px;}
+
+#illus-pinksparklingstar{
+width:  12px;
+margin-top: 300px;}
+
+#illus-linediamond {
+width:  14px;}
+
+#illus-3diamonds {
+width:  15px;
+margin-top: 50px;}
+
+#illus-flowers {
+width:  53px;
+}
+
+#illus-yellowsparklingstar {
+width: 9px;
+}
+
+#illus-tealdot {
+width: 6px;}
+
+#illus-pinksquare {
+width:  5px;
+margin-top:-235px;
+}
+
+#illus-blackheart {
+width: 12px;
+margin-top: 40px;
+}
+
+#illus-linediamond-2 {
+width: 14px;
+}
+
+#illus-pinksquare-2 {
+width: 5px;
+margin-top: 90px;
+}
+
+#illus-3diamonds-2{
+width:15px;
+}
+
+#illus-yellowdot {
+width: 9px;
+}
+    
+.illus-gapband{
+background-color: #f9f5f0; /*ivory*/
+height: 450px;
+}
+/* end of hero section*/
+    
+/*services section */
+    
+.p-list{
+padding-top: 15px;
+padding-bottom: 15px;
+}
+
+#hand-diamond {
+padding-top: 40px;/*1cm*/
+}
+    
+/* my persona */
+    
+#col-symbol5{
+ display: none;}   
+ 
+#symbol1 {
+width: 20px;
+
+}
+
+#symbol2 {
+width: 15px;
+
+}
+
+#symbol3 {
+width: 20px;
+}
+
+#symbol4 {
+width: 22px;
+}
+
+#symbol6 {
+width:30px;
+margin-top: -25px;
+}
+
+#symbol7 {
+width: 24px;
+margin-top: 10px;
+}
+
+#symbol9 {
+width: 10px;
+}
+
+#symbol10 {
+width: 32px;
+margin-top: 5px;
+}
+    
+/*artwork section*/
+ 
+/*signature awards section*/
+    
+.sa-col2 img {
+width: 550px;
+margin-top: 26px; /*signature awards image space between*/
+} 
+    
+/*space between contents - phone*/
+#bg-intro{
+padding: 70px 0 88px 0; /*2.5cm scale to 1.5cm*/
+}
+
+#button-intro{
+margin-top: 40px; /*1.5cm scale to 1cm*/
+}
+
+#bg-services{
+padding: 70px 0 96px 0; /*2.5cm scale to 1.5cm*/
+}
+
+#bg-services h1{
+padding-bottom:18px ; /*1.5cm scale to 1cm*/
+}
+
+#bg-mypersona{
+padding: 36px 0 60px; /*3cm scale to 2cm*/
+}
+
+#bg-mypersona h2{
+padding-bottom: 21px; /*1cm scale to 0.7cm*/
+}
+
+.line-one h1{
+padding-bottom: 20px; /*1cm scale to 0.7cm*/
+}
+
+#bg-artwork{
+padding: 54px 0 85px 0;  /*2.5cm scale to 1.5cm*/
+}
+
+#artwork-container{
+padding: 44px 0 18px 0; /*1.5cm scale to 1cm*/
+}
+
+#bg-sa{
+padding-top: 70px; /*2.5cm scale to 1.5cm*/
+} 
+    
+.sa-col1 h2{
+padding-top: 20px; /*1cm scale to 0.7cm*/
+}
+}/*end of iphone responsive*/
+
+@media screen and (max-width: 385px) /*iphone small */ {
+
+  
+    /*signature awards*/
+    
+    #label-sa{
+    width: 220px;
+    margin-bottom:32px; /*space between*/}
+    
+
+    .sa-col1 p{
+    width: 240px;
+    padding-bottom: 15px;
+    }
+    
+    .sa-col1 h2{
+    padding-top: 5px; /*1cm scale to 0.7cm*/
+     }
+    
+    .sa-col2 img {
+    margin-top: 11px; /*signature awards image space between*/
+} 
+}

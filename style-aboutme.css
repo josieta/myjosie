@@ -1,0 +1,723 @@
+/* colors
+#f9f5f0; ivory 
+#f4c74b; yellow
+#c4842e ; brown*/
+
+@charset "UTF-8";
+
+.bg-wholeaboutme{
+background-color: #f9f5f0;
+}
+
+/*about me*/
+
+#bg-aboutme{
+background-color:#f9f5f0; /*ivory*/
+}
+
+#bg-aboutme h1{
+font-size: 96px;
+line-height: 112px;
+letter-spacing: -2px;
+font-weight:800;
+padding: 106px 0 0 0; /* 2.5cm top*/
+text-align: center;
+}
+
+.aboutme-container{
+display: flex;
+justify-content: center; /* Aligns items horizontally */
+  align-items: center;    /* Aligns items vertically */
+}
+
+.aboutme-col2, .aboutme-col1{
+flex:1;
+}
+
+.aboutme-col2 {
+padding-left: 40px;
+
+}
+.aboutme-col2 p{
+padding-top: 27px; /*1cm*/
+
+}
+
+.aboutme-col1 img{
+width: 85%;
+margin: 0 auto;
+}
+
+/*music box*/
+
+.bg-musicbox {
+  background: linear-gradient(to bottom, transparent 77%, rgb(30, 24, 24) 0%);
+  width: 100%;
+  margin-top: -115px;
+}
+
+.musicbox {
+  display: flex;
+}
+
+.musicbox-col {
+  flex: 1;
+}
+
+#musicbox {
+  width: 280px;
+  margin: 0 auto;
+}
+
+/*timeline*/
+
+#bg-timeline{
+background-color: #1e1818;
+padding: 46px 0 76px 0; /*2.5cm*/
+}
+
+#bg-timeline h2{
+text-align: right;
+}
+
+.timeline-row{
+width: 100%;
+display: flex;
+margin-bottom: 52px; /*1cm*/
+}
+
+.tl-box{
+width: 100%;
+display: flex;
+background-color: #f9f5f0; /*ivory*/
+padding: 15px 30px;
+border-radius: 100px;
+justify-content: space-between; /* Push items to the ends of the container */
+align-items: center; /* Align items vertically in the center */
+}
+
+.tl-box-col{
+flex-direction: column; /* Stack child elements vertically */
+}
+/*timline - row 1*/
+
+.tl1-col1{
+width: 25%;
+}
+
+.tl1-col2{
+width:50%;
+}
+
+/*timline - row 2*/
+.tl2-col1 img, .tl2-col3 img{
+margin: 0 auto;
+}
+
+.tl2-col1 {
+width: 35%;
+}
+
+.tl2-col2 {
+width: 35%;
+}
+
+.tl2-col3 {
+width: 15%;
+}
+
+/*timline - row 3*/
+
+.tl3-col1{
+width: 10%;
+}
+.tl3-col2 {
+width: 80%;
+}
+
+/*timline - row 4*/
+
+.tl4-col2 img{
+margin: 0 auto;
+}
+
+.tl4-col1{
+width: 61%;
+}
+.tl4-col2 {
+width:13%;
+}
+
+/*timeline - image adjustment*/
+
+#tl-symbol1{
+width: 30px;
+}
+
+#tl-symbol2{
+width: 36px;
+margin-top: -30px;
+margin-left: 150px;
+}
+
+#tl-symbol3{
+width: 15px;
+margin-top: -50px;
+}
+
+#tl-symbol4{
+width: 25px;
+margin-top: 50px;
+}
+
+#tl-symbol5{
+width: 30px;
+}
+
+#tl-symbol6{
+width: 18px;
+margin-top: -70px;
+}
+
+#tl-symbol7{
+width:40px;
+}
+
+#tl-symbol8{
+width: 12px;
+margin-top:70px;
+}
+
+#tl-symbol9{
+width: 12px;
+margin-top: 20px;
+}
+
+#tl-symbol10{
+width:40px;
+margin-top: 40px;
+margin-right: 0;
+}
+
+/*skills*/
+
+.bg-skills{
+background-color: white;
+padding: 96px 0 148px 0; /*2.5cm*/
+}
+
+.skills-container1{
+display:flex; 
+justify-content: center; /* Aligns items horizontally */
+  align-items: center;    /* Aligns items vertically */
+}
+
+.skills-container1{
+padding-bottom: 26px;/*1.5cm*/
+}
+
+.skills-container1 h1{
+padding-bottom: 26px; /*1cm*/
+}
+
+.skills-container1-col1{
+width:65%;
+padding-right: 50px;
+}
+
+.skills-container1-col2 {
+width:35%;
+}
+
+.skills-container1-col2 img{
+width: 325px;
+margin-left: auto; /* Push the image to the right */
+}
+
+#skills-colright{
+padding-right: 0px;
+}
+
+/*small me*/
+
+.bg-smallme{
+background-color: #f4c74b; /*yellow*/
+padding: 100px 0 130px 0; /*2.5cm*/
+}
+
+.smallme-container{
+display: flex;
+justify-content: center; /* Aligns items horizontally */
+align-items: center;    /* Aligns items vertically */
+}
+
+.smallme-col1{
+width: 35%;
+position: relative;
+}
+
+.smallme-col2{
+width: 65%;
+}
+
+.smallme-col2 h2{
+font-weight:600;
+}
+
+.ipadcity{
+position: absolute;
+z-index: 3;
+top: 50%; /* Vertically center the image */
+  left: 0; /* Align the image to the left */
+  transform: translateY(-50%); /* Adjust the vertical alignment */
+}
+
+
+#ipadcity-smoke{
+width: 200px;
+opacity: 0.9;
+margin: 0 auto;
+}
+
+#ipadcity{
+width: 390px;
+margin: 0 auto;
+margin-top: -20px;
+}
+
+#wave-top-smallme::before {
+  background-image: radial-gradient(circle at 20px -30px, transparent 40px, #f4c74b 21px);
+}
+
+#wave-top-smallme::after {
+  background-image: radial-gradient(circle at 20px 50px, #f4c74b 40px, transparent 40px);
+}
+
+#wave-bot-smallme::before {
+  background-image: radial-gradient(circle at 20px -30px, transparent 40px, #f9f5f0 21px);
+}
+
+#wave-bot-smallme::after {
+  background-image: radial-gradient(circle at 20px 50px, #f9f5f0 40px, transparent 40px);
+}
+
+/*life moments*/
+
+/*space between contents */
+
+#bg-lifemoments{
+padding: 104px 0 0 0; /*2.5cm*/
+}
+
+#bg-lifemoments p{
+width: 70%;
+padding: 26px 0 66px 0; /*1cm top 1.5cm bot*/
+margin: 0 auto;
+}
+
+/*slider setting*/
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #1e1818;
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px;
+  z-index:8;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.prev-btn {
+  left: 0;
+  border-radius: 0 100px 100px 0;
+}
+
+.next-btn {
+  right: 0;
+  border-radius:100px 0 0 100px;
+}
+
+.arrow-customleft{
+transform: rotate(-90deg); /* Rotate by 90 degrees */
+}
+
+.arrow-customright{
+transform: rotate(90deg); /* Rotate by 90 degrees */
+}
+
+/*life photos styles*/
+.lm-container {
+  flex: 0 0 100%; /* Each slide takes full width */
+  display: flex;
+  width: 100%;
+  height: 100%; /* Ensure the container's height fits the viewport or a parent container */
+  margin: 0 auto;
+  
+}
+
+/* Column settings */
+.lm-col1 {
+  flex: 0 0 38%; 
+  position: relative; /* Ensure proper positioning of child elements */
+  overflow: hidden; /* Prevent images from overflowing */
+ border-radius: 30px;
+}
+
+.lm-col2 {
+  flex: 0 0 58%;
+  position: relative; /* Ensure proper positioning of child elements */
+  overflow: hidden; /* Prevent images from overflowing */
+  border-radius: 30px;
+   margin-left: auto; /* Aligns the column to the right of the parent */
+}
+
+/* Image wrapper */
+.lm-image {
+  position: relative; /* For absolute positioning of label */
+  width: 100%; /* Match column width */
+  height: 100%; /* Ensure full height scaling */
+  overflow: hidden; /* Crop overflowing image */
+}
+
+.lm-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image scales and fills the container without blank space */
+  display: block; /* Removes inline spacing below images */
+}
+
+/* Label styling */
+
+.lm-image:hover #label-lm {
+  opacity: 1; /* Label becomes visible on hover */
+}
+
+#label-lm{
+position: absolute;
+left: 0;
+right: auto;
+bottom: 0;
+background-color:#f9f5f0; /*ivory*/
+opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease; /* Smooth fade-in effect */}
+
+
+/*RESPONSIVE */
+
+@media screen and (max-width: 1700px) /*macbook */ {
+.aboutme-col1 img{
+width: 100%;
+margin: 0 auto;
+}
+} /*end of macbook responsive*/
+
+@media screen and (max-width: 1400px) /*ipad pro */ {    
+/*skills*/   
+    
+.skills-container1-col1 p{
+width:auto;
+}
+    
+.smallme-col2{
+ padding-left: 30px;
+width: 55%;
+    }
+    
+.smallme-col1{
+ padding-left: 50px;
+width: 45%;
+    }
+    
+
+    
+#bg-lifemoments p{
+    width: auto;}
+
+}
+
+@media screen and (max-width: 1300px) /*ipad pro */ {
+  
+/*aboutme*/
+
+.aboutme-container{
+display: block;
+}
+
+.aboutme-col2 {
+padding-left:0;
+
+}
+.aboutme-col2 p{
+padding: 27px 0 40px 0; /* 1cm*/
+}
+
+.aboutme-col1 img{
+width:60%;
+margin: 0 auto;
+padding: 52px 0 58px 0; /*1.5cm*/
+}
+
+/*music box*/
+    
+#bg-timeline{
+padding: 46px 0 78px 0; /*2.5cm*/
+}
+
+.bg-musicbox {
+  margin-top: 0;
+}
+
+.musicbox {
+  display: block;
+ }
+
+/*timeline*/
+      
+    .tl1-col1, .tl2-col1, .tl3-col1, .tl2-col3, .tl4-col2{
+    display: none;
+    }
+    
+    .tl1-col2, .tl2-col2, .tl3-col2, .tl4-col1 {
+    width: 100%;
+    }
+
+  /*skill*/
+    
+.skills-container1-col2 img{
+width: 100%;
+}
+    
+
+
+} /*end of ipad pro responsive*/
+
+@media screen and (max-width: 1000px) /*ipad mini */ {
+  
+/*aboutme*/
+.aboutme-col1 img{
+width:75%;
+margin: 0 auto;
+padding: 52px 0 58px 0; /*1.5cm*/
+}
+    
+/*small me*/
+
+.bg-smallme{
+padding: 0 0 130px 0; /*2.5cm*/
+}
+
+.smallme-container{
+display: block;
+}
+
+.smallme-col1{
+width:auto;
+padding-left: 0;
+}
+
+.smallme-col2{
+width:auto;
+padding-left: 0;
+margin-top: -5px; /*1.5cm*/
+text-align: center;
+}
+
+.ipadcity{
+width: 100%;
+position:relative;
+top: 0;
+left: 50%;
+transform: translate(-50%, -10%);
+padding-top: 100px;
+} 
+    
+
+    #ipadcity-smoke{
+    margin: 0 auto;
+    }
+
+/*hand heart of life moments*/
+    
+    
+}
+
+@media screen and (max-width: 700px) /*iphone */ {
+        
+/*aboutme*/
+
+#bg-aboutme h1{
+font-size: 60px;
+line-height: 64px;
+letter-spacing: 0;
+padding: 68px 0 0 0; /* 2.5cm top scale to 1.5cm*/
+}
+
+.aboutme-col2 p{
+padding: 16px 0 30px; /*1cm scale to 0.7*/
+}
+
+.aboutme-col1 img{
+width: 90%;
+padding: 40px 0 40px 0; /*1.5cm scale to 1*/
+}
+
+/*music box*/   
+
+#musicbox {
+  width: 165px;
+}
+    
+/*timline*/
+    
+#bg-timeline{
+padding: 28px 0 36px 0; /*2.5 scale to 1.5cm*/
+}
+    
+.tl-box{
+padding: 10px 20px;}
+    
+  
+.timeline-row{
+margin: 0 0 42px 0; /*1cm to 0.7cm*/
+}
+
+ /*skills*/
+    
+ .skills-container1{
+  display: block;
+    }
+    
+  .skills-container1-col2{
+  display: none;
+  }
+    
+  .skills-container1-col1 {
+   width: auto;
+   padding-right: 0;
+    }
+   
+.bg-skills{
+background-color: white;
+padding: 64px 0 99px 0; /*2.5cm scale to 1.5cm*/
+}
+
+.skills-container1{
+padding-bottom: 18px;/*1.5cm scale to 1cm*/
+}
+
+.skills-container1 h1{
+padding-bottom: 18px; /*1cm scale to 0.7cm*/
+}
+    
+/*small me*/
+    
+.bg-smallme{
+padding: 0 0 90px 0; /*2.5cm scale to 1.5*/
+}
+
+.smallme-col2{
+margin-top: 0; /*1cm*/
+}
+
+    
+    #ipadcity{
+    width: 280px;
+    margin-top: -15px;
+    }
+    
+    #ipadcity-smoke{
+    width: 170px;
+    }
+    
+/*life moments*/
+ 
+#bg-lifemoments{
+padding-top:  60px; /*2.5cm scale to 1.5*/
+}
+
+#bg-lifemoments p{
+padding: 18px 0 42px 0; /*0.7cm top 1cm bot*/
+margin: 0 auto;
+}    
+    
+.prev-btn {
+  border-radius: 100px 100px 100px 100px;
+}
+
+.next-btn {
+  border-radius:100px 100px 100px 100px;
+}
+    
+ .lm-container {
+  display: block;}   
+    
+    
+/* Column settings */
+.lm-col1 {
+ width: 65%;
+ border-radius:20px;
+  margin: 0 auto;
+ margin-bottom: 20px;
+}
+
+.lm-col2 {
+  width: 65%;
+  border-radius: 20px;
+  margin: 0 auto;
+
+}
+
+/* Image wrapper */
+.lm-image {
+  
+  position: relative; /* For absolute positioning of label */
+  width: 100%; /* Match column width */
+  height: 100%; /* Ensure full height scaling */
+  overflow: hidden; /* Crop overflowing image */
+}
+
+.lm-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image scales and fills the container without blank space */
+  display: block; /* Removes inline spacing below images */
+}
+
+
+/* Column settings */
+.lm-col1 {
+  flex: 0 0 37%; 
+  border-radius: 20px;
+}
+
+.lm-col2 {
+  flex: 0 0 58%;
+  border-radius: 20px;
+}
+    
+
+    
+}/*end of phone 700px responsive */
+
+
