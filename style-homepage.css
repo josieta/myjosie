@@ -355,7 +355,7 @@ margin-top: -30px;
 }
 
 #symbol6 {
-width: 50px;
+width: 30px;
 }
 
 #symbol7 {
@@ -394,14 +394,14 @@ padding: 0;
 
 /*running animation coding*/
         .line-one {
-            animation: scroll-left 30s linear infinite;
+            animation: scroll-left 15s linear infinite;
         }
 
         .line-two {
              display: flex; /* Use flexbox to manipulate text position */
             justify-content: flex-end; /* Align the text content to the right */
           
-            animation: scroll-right 30s linear infinite;
+            animation: scroll-right 15s linear infinite;
         }
 
         @keyframes scroll-right {
@@ -518,7 +518,9 @@ width:auto; /*deactive its width and apply screenwidth*/
 
 /*services*/
     
-
+    #hand-diamond{
+    width: 100%;
+    }
     
 /*signature awards*/
     

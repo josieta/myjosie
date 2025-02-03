@@ -151,7 +151,7 @@ width:13%;
 /*timeline - image adjustment*/
 
 #tl-symbol1{
-width: 30px;
+width: 15px;
 }
 
 #tl-symbol2{
@@ -161,7 +161,7 @@ margin-left: 150px;
 }
 
 #tl-symbol3{
-width: 15px;
+width: 30px;
 margin-top: -50px;
 }
 
@@ -578,7 +578,7 @@ padding: 16px 0 30px; /*1cm scale to 0.7*/
 }
 
 .aboutme-col1 img{
-width: 90%;
+width: 100%;
 padding: 40px 0 40px 0; /*1.5cm scale to 1*/
 }
 
@@ -661,13 +661,7 @@ padding: 18px 0 42px 0; /*0.7cm top 1cm bot*/
 margin: 0 auto;
 }    
     
-.prev-btn {
-  border-radius: 100px 100px 100px 100px;
-}
 
-.next-btn {
-  border-radius:100px 100px 100px 100px;
-}
     
  .lm-container {
   display: block;}   
@@ -675,47 +669,21 @@ margin: 0 auto;
     
 /* Column settings */
 .lm-col1 {
- width: 65%;
+ width: 100%;
  border-radius:20px;
   margin: 0 auto;
  margin-bottom: 20px;
 }
 
 .lm-col2 {
-  width: 65%;
+  width: 100%;
   border-radius: 20px;
   margin: 0 auto;
 
 }
 
-/* Image wrapper */
-.lm-image {
-  
-  position: relative; /* For absolute positioning of label */
-  width: 100%; /* Match column width */
-  height: 100%; /* Ensure full height scaling */
-  overflow: hidden; /* Crop overflowing image */
-}
-
-.lm-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures image scales and fills the container without blank space */
-  display: block; /* Removes inline spacing below images */
-}
 
 
-/* Column settings */
-.lm-col1 {
-  flex: 0 0 37%; 
-  border-radius: 20px;
-}
-
-.lm-col2 {
-  flex: 0 0 58%;
-  border-radius: 20px;
-}
-    
 
     
 }/*end of phone 700px responsive */

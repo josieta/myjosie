@@ -154,7 +154,8 @@ padding-top: 30px;
   border-radius: 15px;
   border: solid #1e1818 2px;
   word-wrap: break-word;
-  transition: all 0.5s ease; /* Smooth animation */}
+  transition: all 0.5s ease; /* Smooth animation */
+ pointer-events: none;}
 
 .pop-up h5, .pop-up h6{
 font-size: 12px;
@@ -163,7 +164,7 @@ line-height: 20px;
 font-style: normal;
 }
 
- .image-container:hover .pop-up {
+.image-container img:hover + .pop-up {
   bottom: 80%; /* Final position above the image */
   transform: translate(-50%, -10px); /* Slide up */
   opacity: 1; /* Fade in */}
