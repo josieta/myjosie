@@ -41,6 +41,7 @@ padding-top: 112px;
 
 /* Hero section style*/
 .illus-container{
+width: 100vw;
 height: auto;
 width: 1920px;
 overflow-x: hidden;
