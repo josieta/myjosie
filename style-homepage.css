@@ -52,6 +52,7 @@ margin: 0 auto;
   overflow-x: hidden;
   overflow-y: visible;
   position: relative;
+  margin-top: -470px;
 }
 
 .bunny img{
@@ -60,6 +61,111 @@ width: 1920px; /* Fixed width */
   position: absolute;
   left: 50%;
   transform: translateX(-50%); /* Keep image centered */
+ 
+}
+
+/* hands and rainbow*/
+
+.hands-rainbow{
+margin: 0 auto;
+width: 950px;
+}
+
+.smoke img{
+width: 300px;
+}
+
+/* hero section - group*/
+
+.illus-group img{
+margin: 0 auto; /*all images in group align center*/
+}
+
+.illus-group{
+display: flex;
+
+}
+
+.illus-groupleft, .illus-groupcenter, .illus-groupright{
+display: block;
+
+}
+
+.illus-groupleft, .illus-groupright{
+width: 40%;
+}
+
+.illus-groupcenter{
+width: 20%;
+ display: flex;
+  flex-direction: column; /* Stack h1 elements vertically */
+  justify-content: center; /* Center them vertically */
+  align-items: center; /* Align them in the center horizontally */
+}
+
+
+.row-left, .row-right{
+display: flex;
+width: 100%;
+justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+}
+
+.row-col{
+flex: 1;
+}
+
+
+#fish{
+width: 162px;
+}
+
+#squid {
+width: 237px;
+}
+
+#flowers {
+width: 126px;
+}
+
+#illus-cloud{
+width: 210px;
+}
+
+#illus-linediamond {
+width: 33px;
+}
+
+#illus-pinksquare {
+width: 10px;
+}
+
+#illus-3diamonds {
+width: 20px;
+}
+
+#illus-blackheart{
+width: 20px;
+}
+
+#illus-blackdiamond{
+width: 11px;
+}
+
+#illus-whitestar{
+width: 15px;
+}
+
+#illus-tealdot{
+width: 15px;
+}
+
+#illus-yellowsparklingstar{
+width: 25px;
+}
+
+#illus-pinkstar{
+width: 30px;
 }
 
 /*end of hero section*/
@@ -76,6 +182,7 @@ width: 65%;
 margin: 0 auto; /*centre the text*/
 font-weight:600;
 }
+
 
 /*services secion */
 
@@ -351,6 +458,10 @@ margin-top: 250px;
 /*RESPONSIVE */
 
 @media screen and (max-width: 1700px) /*macbook */{
+    
+/*hero section*/
+.bunny img{
+width: 1700px; /* Fixed width */}
 
     
 } /* end of macbook responsive*/
@@ -444,7 +555,10 @@ margin-top: 42px; /*signature awards image space between*/
 }/* end of ipad mini responsive */
 
 @media screen and (max-width: 700px) /*iphone */ {   
-    
+  
+/*hero section*/
+.bunny img{
+width: 700px; /* Fixed width */}
     
 /*services section */
     
