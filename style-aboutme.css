@@ -318,6 +318,7 @@ margin: 0 auto;
 /*slider setting*/
 
 .slider {
+  width: 80%;
   position: relative;
   overflow: hidden;
   margin: 0 auto;
@@ -520,8 +521,8 @@ padding: 46px 0 78px 0; /*2.5cm*/
 width: 100%;
 }
     
-
-
+/*life moment slider*/
+    
 } /*end of ipad pro responsive*/
 
 @media screen and (max-width: 1000px) /*ipad mini */ {
@@ -681,6 +682,10 @@ margin-top: 0; /*1cm*/
     }
     
 /*life moments*/
+    
+.slider {
+  width: 90%;
+}
  
 #bg-lifemoments{
 padding-top:  60px; /*2.5cm scale to 1.5*/
