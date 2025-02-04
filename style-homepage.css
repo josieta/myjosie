@@ -134,6 +134,7 @@ align-items:baseline; /* align images bottom */
 
 #illus-pinksquare {
   width: 10px;
+margin-top: 415px;
 }
 
 #illus-blackheart {
@@ -498,6 +499,11 @@ margin-top:-466px;
  
 .illus-grid-center{
 margin: 35px 20px 0 20px;}
+    
+#illus-pinksquare {
+  width: 10px;
+margin-top:0;
+}
     
 
 /* end of hero section*/
