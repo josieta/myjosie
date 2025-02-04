@@ -58,7 +58,7 @@ h1 { /*headline 1*/
 
 h2 { /*headline 2*/
   font-size: 40px;
-  line-height: 64px;
+  line-height: 60px;
   font-weight: 700;
 }
 
@@ -202,10 +202,14 @@ color:#1e1818;
     transition: transform 0.3s ease; /* Adds smooth transition */
 }
 
-#burgericon{
-font-size: 14px;
-}
 /*dropdown animation for burger menu*/
+.rotate-hover{
+display: flex;
+}
+#burgericon{
+width:52px;
+margin: 0 auto;
+}
 
 .menubar-col3 {
   position: static; /*make the width full screen*/
@@ -231,6 +235,8 @@ font-size: 14px;
   z-index: 1;
   
 }
+
+
 
 /* style for burger menu*/
 
@@ -433,6 +439,10 @@ padding:70px 0 ; /*margin top and bottom of each section*/
     
  /*Menu bar*/
     
+#burgericon{
+width:44px;
+}
+    
 .menubar-col1, .menubar-col3 {
     width: 22%;
 }
@@ -451,10 +461,6 @@ padding:70px 0 ; /*margin top and bottom of each section*/
     
 .dropdown li {
     padding: 15px 21px 15px 0;
-}
-    
-#burgericon{
-font-size: 12px;
 }
    
 /*portfolio setting*/
