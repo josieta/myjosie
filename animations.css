@@ -750,8 +750,8 @@ pulse
 	animation-name: pulse;
 	-webkit-animation-name: pulse;	
 
-	animation-duration: 1s;	/*default 1.5s*/
-	-webkit-animation-duration: 1s; /*default 1.5s*/
+	animation-duration: 0.5s;	/*default 1.5s*/
+	-webkit-animation-duration: 0.5s; /*default 1.5s*/
 
 	animation-iteration-count: infinite;
 	-webkit-animation-iteration-count: infinite;
@@ -798,8 +798,8 @@ pulse2
 	animation-name: pulse2;
 	-webkit-animation-name: pulse2;	
 
-	animation-duration: 1.3s;	
-	-webkit-animation-duration: 1.3s;
+	animation-duration: 0.7s;	
+	-webkit-animation-duration: 0.7s;
 
 	animation-iteration-count: infinite;
 	-webkit-animation-iteration-count: infinite;
@@ -845,8 +845,8 @@ pulse3
 	animation-name: pulse3;
 	-webkit-animation-name: pulse3;	
 
-	animation-duration: 1.5s;	
-	-webkit-animation-duration: 1.5s;
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
 
 	animation-iteration-count: infinite;
 	-webkit-animation-iteration-count: infinite;
