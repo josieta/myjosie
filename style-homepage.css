@@ -19,7 +19,7 @@ padding-bottom:34px ; /*1.5cm*/
 }
 
 #bg-mypersona{
-padding: 50px 0 72px; /*3cm*/
+padding: 50px 0 90px; /*3cm*/
 }
 
 #bg-mypersona h2, .line-one h1{
@@ -352,16 +352,17 @@ width: 30px;
 
 #symbol5 {
 width: 20px;
-margin-top: -30px;
+
 }
 
 #symbol6 {
 width: 30px;
+margin-top: -50px;
 }
 
 #symbol7 {
-width: 30px;
-margin-top: -50px;
+width: 25px;
+margin-top: 30px;
 
 }
 
@@ -372,11 +373,12 @@ margin-top: -25px;
 
 #symbol9 {
 width: 15px;
-
+margin-top: -50px;
 }
 
 #symbol10 {
 width: 48px;
+margin-top: 30px;
 }
 
 /*my persona running text*/
@@ -742,11 +744,11 @@ margin-top: 10px;
 
 #symbol9 {
 width: 10px;
+margin-top:-30px;
 }
 
 #symbol10 {
 width: 32px;
-margin-top: 5px;
 }
     
 /*artwork section*/
@@ -776,7 +778,7 @@ padding-bottom:18px ; /*1.5cm scale to 1cm*/
 }
 
 #bg-mypersona{
-padding: 36px 0 60px; /*3cm scale to 2cm*/
+padding: 36px 0 70px; /*3cm scale to 2cm*/
 }
 
 #bg-mypersona h2{
