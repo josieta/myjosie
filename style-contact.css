@@ -242,7 +242,7 @@ margin-bottom: 250px;
     /* connect*/
     
 .connect {
-padding: 68px 0 70px 0; /*2.5cm scale to 1.5cm*/
+padding: 68px 0 50px 0; /*2.5cm scale to 1.5cm*/
 }
     
 .connect h1{
@@ -256,6 +256,7 @@ padding-top: 20px;/*1cm scale to 0.7cm*/
     
 .connect-col1 p{
     width: 100%;
+    padding-bottom: 20px;
     }
     
 .connect-col2{
@@ -269,10 +270,11 @@ width: 100%;
   
 #window {
 width: 120px;
+margin: 0 auto;
 }   
     
  .image-container {
-padding-top: 16px; /* 1cm scale to 0.7cm*/}
+padding-top: 35px; /* 1cm scale to 0.7cm*/}
  
 /*window and stars*/
 
