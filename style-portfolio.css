@@ -43,7 +43,7 @@ display: flex;
 /* FOR PAGE portfolio.html*/
 
 .bg-portfolio {
-margin: 126px 0 76px 0; /*2.5cm*/
+margin-top:64px;
 }
 
 
@@ -277,8 +277,8 @@ padding:36px 0 38px 0; /*2.5cm scale to 1.5cm*/
  /*portoflio*/
 
 .bg-portfolio {
-margin: 60px 0 24px 0; /*2.5cm scale to 1.5cm*/
-}   
+margin-top:46px;
+}
     
 /*bg color*/
 
