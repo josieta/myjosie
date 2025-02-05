@@ -36,7 +36,7 @@ width: 570px;
 }
 .connect-col2 {
 display: flex;
-width:40%;
+width:30%;
 align-items: flex-start; /* Aligns items to the top */
 justify-content: flex-end; /* Aligns items to the right */
 }
@@ -47,6 +47,7 @@ padding-right: 40px;
 
 .connect-col3 {
 margin-left: auto;
+width: 10%
 }
 
 .email-link {
@@ -175,16 +176,19 @@ font-style: normal;
 @media screen and (max-width: 1400px) /*ipad pro */{
     
 .connect-col1 p{
-width:90%;
+width:85%;
 }
     
 .connect-col1 {
-width:50%;
+width:55%;
 }
 
 .connect-col2 {
-width: 50%;
-}    
+width: 30%;
+} 
+    .connect-col3{
+    width: 15%;
+    }
     
 }/*end of ipad pro*/
 
