@@ -164,7 +164,7 @@ line-height: 20px;
 font-style: normal;
 }
 
- .image-container:hover .pop-up {
+.image-container img:hover + .pop-up {
   bottom: 80%; /* Final position above the image */
   transform: translate(-50%, -10px); /* Slide up */
   opacity: 1; /* Fade in */}
@@ -175,8 +175,17 @@ font-style: normal;
 @media screen and (max-width: 1400px) /*ipad pro */{
     
 .connect-col1 p{
-width: 75%;
+width:90%;
 }
+    
+.connect-col1 {
+width:50%;
+}
+
+.connect-col2 {
+width: 50%;
+}    
+    
 }/*end of ipad pro*/
 
 

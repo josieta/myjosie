@@ -644,10 +644,17 @@ margin-left: -15px;
 width: 88px;
 margin-top: 50px;
 }
+    
+ #illus-pinksparklingstar {
+  width: 12px;
+  margin-top:162px;
+}  
 
 #illus-linediamond {
 width:  14px;}
 
+ 
+    
 #illus-3diamonds {
 width:  15px;
 margin-top: 50px;}
@@ -686,11 +693,7 @@ margin-top: 70px;
 #illus-yellowdot {
 width: 9px;
 }
-    
-    .illus-blackdiamond{
-    display: none;
-    }
-    
+
 /* end of hero section*/
     
 /*services section */
