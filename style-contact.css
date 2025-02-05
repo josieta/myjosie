@@ -36,7 +36,7 @@ width: 570px;
 }
 .connect-col2 {
 display: flex;
-width:30%;
+width:40%;
 align-items: flex-start; /* Aligns items to the top */
 justify-content: flex-end; /* Aligns items to the right */
 }
@@ -47,7 +47,7 @@ padding-right: 40px;
 
 .connect-col3 {
 margin-left: auto;
-width: 10%
+width:auto;
 }
 
 .email-link {
@@ -180,15 +180,12 @@ width:80%;
 }
     
 .connect-col1 {
-width:55%;
+width:50%;
 }
 
 .connect-col2 {
-width: 30%;
+width: 50%;
 } 
-    .connect-col3{
-    width: 15%;
-    }
     
 }/*end of ipad pro*/
 
@@ -201,9 +198,11 @@ width: 30%;
 display:block;
 
 }
-.connect-col1, .connect-col2 {
+.connect-col1, .connect-col2{
 width: 100%;
 }
+    
+
 
 
  .connect{
