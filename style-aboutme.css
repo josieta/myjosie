@@ -697,11 +697,12 @@ padding: 18px 0 42px 0; /*0.7cm top 1cm bot*/
 margin: 0 auto;
 }    
     
-
+button {
+  top:30%;
+}
     
  .lm-container {
-  display: block;}   
-    
+  display: block;}      
     
 /* Column settings */
 .lm-col1 {
