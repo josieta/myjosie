@@ -194,7 +194,7 @@ color:#1e1818;
 }
 
 .menubar-col2 img {
-    width: 90px;
+    width: 110px;
 }
 
 .menubar-col1:hover .rotate-hover, .menubar-col3:hover .rotate-hover {
@@ -207,7 +207,7 @@ color:#1e1818;
 display: flex;
 }
 #burgericon{
-width:52px;
+width:60px;
 margin: 0 auto;
 }
 
@@ -440,7 +440,7 @@ padding:70px 0 ; /*margin top and bottom of each section*/
  /*Menu bar*/
     
 #burgericon{
-width:44px;
+width:48px;
 }
     
 .menubar-col1, .menubar-col3 {
@@ -456,7 +456,7 @@ width:44px;
 } 
       
 .menubar-col2 img {
-    width: 70px;
+    width: 80px;
 }
     
 .dropdown li {
