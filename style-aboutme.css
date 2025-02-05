@@ -306,12 +306,12 @@ margin-top: -20px;
 /*space between contents */
 
 #bg-lifemoments{
-padding: 104px 0 0 0; /*2.5cm*/
+padding: 100px 0 0 0; /*2.5cm*/
 }
 
 #bg-lifemoments p{
 width: 70%;
-padding: 26px 0 66px 0; /*1cm top 1.5cm bot*/
+padding: 26px 0 46px 0; /*1cm top 1.5cm bot*/
 margin: 0 auto;
 }
 
@@ -552,7 +552,7 @@ padding: 52px 0 58px 0; /*1.5cm*/
 /*small me*/
 
 .bg-smallme{
-padding: 0 0 130px 0; /*2.5cm*/
+padding:48px 0 130px 0; /*2.5cm*/
 }
 
 .smallme-container{
@@ -567,7 +567,7 @@ padding-left: 0;
 .smallme-col2{
 width:auto;
 padding-left: 0;
-margin-top: -5px; /*1.5cm*/
+margin-top: -35px; /*1.5cm*/
 text-align: center;
 }
 
@@ -651,7 +651,7 @@ margin: 0 0 42px 0; /*1cm to 0.7cm*/
    
 .bg-skills{
 background-color: white;
-padding: 64px 0 99px 0; /*2.5cm scale to 1.5cm*/
+padding: 60px 0 99px 0; /*2.5cm scale to 1.5cm*/
 }
 
 .skills-container1{
@@ -693,7 +693,7 @@ padding-top:  60px; /*2.5cm scale to 1.5*/
 }
 
 #bg-lifemoments p{
-padding: 18px 0 42px 0; /*0.7cm top 1cm bot*/
+padding: 18px 0 32px 0; /*0.7cm top 1cm bot*/
 margin: 0 auto;
 }    
     

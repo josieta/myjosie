@@ -241,6 +241,10 @@ border-radius:0;
 margin-top: 0; /*none*/
 border: solid #d4d0d1 0px;
 }
+    
+ .cc-title{
+padding:60px 0 66px 0; /*2.5cm scale to 1.5cm*/
+}
   
  /*stars*/
     
@@ -266,7 +270,7 @@ margin: 0 80px; /*space between eyes*/
 
  .cc-title{
 width:90%;
-padding: 46px 0 46px 0; /*2.5cm scale to 1.5cm*/
+padding:36px 0 38px 0; /*2.5cm scale to 1.5cm*/
 }
 
 
