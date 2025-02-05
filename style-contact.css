@@ -235,7 +235,7 @@ margin-bottom: 250px;
     /* connect*/
     
 .connect {
-padding: 68px 0 50px 0; /*2.5cm scale to 1.5cm*/
+padding: 68px 0 58px 0; /*2.5cm scale to 1.5cm*/
 }
     
 .connect h1{
@@ -253,7 +253,7 @@ padding-top: 20px;/*1cm scale to 0.7cm*/
     }
     
 .connect-col2-1, .connect-col2-2{
-padding-bottom: 20px;
+padding-bottom: 26px;
 }
     
 .connect-col2{
