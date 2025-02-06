@@ -144,7 +144,7 @@ padding-top: 30px;
   transform: translate(-50%, 20px); /* Start slightly below the final position */
   opacity: 0;
   background-color: #cbb9fc; /* purple*/
-  padding: 20px;
+  padding: 15px;
   border-radius: 20px;
   border: solid #1e1818 2px;
   word-wrap: break-word;
