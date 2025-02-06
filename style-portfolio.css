@@ -173,8 +173,8 @@ margin: 0 120px; /*space between eyes*/
     }
 
 .pupil{
-  background-image: url('images/eye-stars.png'); /* Replace 'your-image.jpg' with the path to your image */
-  background-size: 75%; /* Makes the image cover the entire element */
+  background-image: url('images/eye-stars.gif'); /* Replace 'your-image.jpg' with the path to your image */
+  background-size: 90%; /* Makes the image cover the entire element */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   background-position: center; /* Centers the image */
 }
