@@ -138,7 +138,7 @@ padding-top: 30px;
 }
       .pop-up {
   position: absolute;
-  width: 200px;
+  width: 205px;
   bottom: 70%; /* Position above the image */
   left: 50%;
   transform: translate(-50%, 20px); /* Start slightly below the final position */
