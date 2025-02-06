@@ -201,7 +201,7 @@ text-align: center; /*centre the text*/
 }
 
 #bg-intro h2{
-width: 65%;
+width: 900px;
 margin: 0 auto; /*centre the text*/
 font-weight:600;
 }
@@ -550,9 +550,6 @@ margin-top: 40px; /*1cm*/
 @media screen and (max-width: 1100px) /*ipad mini */ {
     
 /* intro section*/
-#bg-intro h2{
-width:auto; /*deactive its width and apply screenwidth*/
-}
 
 /*services secion */
 .services-container{
