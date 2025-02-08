@@ -44,6 +44,10 @@ display: flex;
 display: flex;
 }
 
+.cc-flexbox-col{
+flex:1;
+}
+
 #cc-button{
 margin: 36px 0 0 0;
 }
@@ -285,9 +289,6 @@ padding:36px 0 38px 0; /*2.5cm scale to 1.5cm*/
     display: block;
     }
     
-    .cc-flexbox-col{
-    flex:1;
-    }
     
 #cc-button{
 margin: 34px 0 18px 0;
