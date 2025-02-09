@@ -333,8 +333,8 @@ border-radius: 30px;
  background-color: #1e1818;
  color: white;
  border: none;
- width: 30px;
- height: 60px;
+ width: 35px;
+ height: 65px;
  text-align: center;
  top: 50%;
  transform: translateY(-50%);
@@ -714,7 +714,12 @@ margin: 0 auto;
 }
     
  .lm-container {
-  display: block;}      
+  display: block;} 
+    
+#lm-arrowleft, #lm-arrowright{
+ width: 30px;
+ height: 60px;
+}
     
 /* Column settings */
 .lm-col1 {
