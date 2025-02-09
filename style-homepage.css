@@ -26,13 +26,20 @@ padding: 50px 0 90px; /*3cm*/
 padding-bottom: 22px; /*1cm*/
 }
 
-
 #bg-artwork{
 padding: 104px 0 135px 0; /*2.5cm*/
 }
 
 #artwork-container{
 padding: 64px 0 22px 0; /*1.5cm*/
+}
+
+.testimonials {
+padding: 120px 0 140px 0;
+}
+
+.testimonials h1{
+padding-bottom: 30px;
 }
 
 #bg-sa{
@@ -423,13 +430,110 @@ padding: 0;
                 transform: translateX(-100%);
             }
         }
-
 /*Artwork section*/
 
 #bg-artwork{
 background-color: #fff;
 text-align: center;
 }
+/* quota mark top*/
+.quotamark-top {
+position: relative;
+width: 80%;
+margin: 0 auto;
+}
+.quotamark-top img{
+position: absolute;
+width: 180px;
+margin-top: -24px;
+z-index: 2;
+}
+
+/* quota mark bot*/
+.quotamark-bot {
+position: relative;
+width: 80%;
+margin: 0 auto;
+}
+.quotamark-bot img{
+position: absolute;
+width: 180px;
+margin-top: -46px;
+z-index: 2;
+top: 50%; /* Center vertically */
+  right: 0; /* Align to the right */
+  transform: translateY(-50%); /* Adjust to center vertically */
+  /* Optional styling for demonstration */
+}
+
+/*testimonials*/
+
+/* testimonials section*/
+.testi-bg{
+background-color: #f9f5f0;
+}
+.testimonials {
+margin: 0 auto;
+text-align: center;
+}
+
+.testimonials h1{
+}
+
+.testimonial-container {
+      
+       margin: 0 auto;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .testimonial-wrapper {
+      display: flex;
+      margin-bottom: 50px; 
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .testimonial-content {
+      min-width: 100%;
+      height: 100%; /* Fixed height */
+      display: inline-block;
+      /*justify-content: center;  Horizontal center */
+      /*align-items: center;  Vertical center */
+      background-color: #f9f5f0;
+      text-align: center;
+      overflow-y: scroll;
+    }
+
+.testimonial-content p, .testimonial-content h3, .testimonial-content h5{
+width: 70%;
+margin: 0 auto;
+}
+
+    /* Dots styling */
+    .dots {
+      display: flex;
+    align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .dot {
+      width: 15px;
+      height: 15px;
+      margin: 0 10px 0 10px;
+      background-color: #1e1818;
+      border-radius: 50%;
+      border: solid #1e1818 2px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .dot.active {
+     width: 20px;
+     height: 20px;
+    background-color: #fdb7c9; /*pink*/
+     
+    }
 
 /*signature awards*/
 
@@ -583,6 +687,17 @@ width: 60%;
 
 #artwork-container{
 padding-bottom: 22px; /*1.5cm*/
+}
+    
+/*testimonials*/
+    
+.quotamark-bot, .quotamark-top{
+    display: none;
+    }
+    
+    
+.testimonial-content p, .testimonial-content h3, .testimonial-content h5{
+width: auto;
 }
     
 /*signature awards*/
@@ -795,6 +910,18 @@ padding: 54px 0 85px 0;  /*2.5cm scale to 1.5cm*/
 padding: 44px 0 18px 0; /*1.5cm scale to 1cm*/
 }
 
+.testimonials {
+padding: 70px 0 80px 0;
+}
+
+.testimonials h1{
+padding-bottom: 25px;
+}    
+    
+.testimonial-wrapper {
+margin-bottom: 35px; 
+}   
+    
 #bg-sa{
 padding-top: 70px; /*2.5cm scale to 1.5cm*/
 } 

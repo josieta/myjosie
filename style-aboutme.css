@@ -328,19 +328,37 @@ border-radius: 30px;
   transition: transform 0.3s ease-in-out;
 }
 
+#lm-arrowleft, #lm-arrowright{
+  padding: 5px;
+ background-color: #1e1818;
+ color: white;
+ border: none;
+ width: 30px;
+ height: 60px;
+ text-align: center;
+ top: 50%;
+ transform: translateY(-50%);
+}
+
+#lm-arrowleft{
+  border-radius: 0 100px 100px 0; 
+}
+
+#lm-arrowleft p{
+margin-left: -5px;
+}
+
+#lm-arrowright{
+  border-radius:100px 0 0 100px;
+}
+
+#lm-arrowright p{
+margin-right: -5px;
+}
+
 button {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #1e1818;
-  color: white;
-  border: none;
-  width: 40px;
-  height: 40px;
   cursor: pointer;
-  font-size: 18px;
-  line-height: 0px;
-  padding: 5px;
   z-index:8;
 }
 
@@ -351,21 +369,14 @@ button:disabled {
 
 .prev-btn {
   left: 0;
-  border-radius: 0 100px 100px 0;
+ 
 }
 
 .next-btn {
   right: 0;
-  border-radius:100px 0 0 100px;
+
 }
 
-.arrow-customleft{
-transform: rotate(-90deg); /* Rotate by 90 degrees */
-}
-
-.arrow-customright{
-transform: rotate(90deg); /* Rotate by 90 degrees */
-}
 
 /*life photos styles*/
 .lm-container {
@@ -698,7 +709,7 @@ padding: 18px 0 32px 0; /*0.7cm top 1cm bot*/
 margin: 0 auto;
 }    
     
-button {
+#lm-arrowleft, #lm-arrowright {
   top:80%;
 }
     
@@ -717,7 +728,6 @@ button {
   width: 100%;
   border-radius: 20px;
   margin: 0 auto;
-
 }
 
 
