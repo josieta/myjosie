@@ -634,6 +634,12 @@ width:auto; /*deactive its width and apply screenwidth*/
     width: 100%;
     }
     
+/*testimonials*/
+    
+.testimonial-content p, .testimonial-content h3, .testimonial-content h5{
+width: auto;
+}
+    
 /*signature awards*/
     
 .sa-col1 {
@@ -648,6 +654,8 @@ width: 100%;
 width: 1000px;
 margin-top: 40px; /*1cm*/
 } 
+
+    
 
 } /*end of ipad pro*/
 
@@ -695,10 +703,6 @@ padding-bottom: 22px; /*1.5cm*/
     display: none;
     }
     
-    
-.testimonial-content p, .testimonial-content h3, .testimonial-content h5{
-width: auto;
-}
     
 /*signature awards*/
     
