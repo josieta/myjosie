@@ -227,6 +227,40 @@ height:70px;
 transform: rotate(45deg);
 }
 
+/*All you need is love*/
+
+#aynil-slider {
+width: 100%;
+border-radius: 0;
+  }
+
+#aynil-buttonleft, #aynil-buttonright{
+  padding: 5px;
+ background-color: #1e1818;
+ color: white;
+ border: none;
+ width: 35px;
+ height: 65px;
+ text-align: center;
+ top: 50%;
+ transform: translateY(-50%);
+}
+
+#aynil-buttonleft{
+  border-radius: 0 100px 100px 0; 
+}
+
+#aynil-buttonleft p{
+margin-left: -5px;
+}
+
+#aynil-buttonright{
+  border-radius:100px 0 0 100px;
+}
+
+#aynil-buttonright p{
+margin-right: -5px;
+}
     
 /*RESPONSIVE */
 
@@ -357,6 +391,10 @@ width:5px;
     .es-row2{
     display: none;
     }
+    
+/*All you need is love*/
+
+    
 }
 
 

@@ -16,6 +16,7 @@
 <link rel="stylesheet" type="text/css" href="style.css"> 
 <link rel="stylesheet" type="text/css" href="style-homepage.css"> 
 <link rel="stylesheet" type="text/css" href="style-portfolio.css"> 
+<link rel="stylesheet" type="text/css" href="style-aboutme.css"> 
     
 
 <!-- font-family: 'Poppins', sans-serif;!-->
@@ -71,7 +72,59 @@
 
 <p>Updating...</p>
 </div> 
-
+     <img src="art-aynil/AYNIL-digitalinvite.jpg" alt="digital invite">  
+    
+<img src="art-aynil/AYNIL-PartyPetDrawPoster.jpg" alt="poster">
+    
+<div class="cc-flexbox">
+<div class="cc-flexbox-col"><img src="art-aynil/AYNIL-SilentAuctionPoster.jpg" alt="poster"></div>
+<div class="cc-flexbox-col"><img src="art-aynil/AYNIL-RideMeHomePoster.jpg" alt="poster"></div>
+    
+</div>
+    
+ <img src="art-aynil/AYNIL-totebag.jpg" alt="tote bag"> 
+    
+<div class="cc-flexbox">
+<div class="cc-flexbox-col"><img src="art-aynil/AYNIL-stand.jpg" alt="stand"></div>
+<div class="cc-flexbox-col"><img src="art-aynil/AYNIL-TableSign.jpg" alt="table sign"></div>
+    
+</div>
+    
+   <div class="slider" id="aynil-slider">
+  <button class="prev-btn" id="aynil-buttonleft"><p>❮</p></button>
+        
+  <div class="slider-wrapper">
+      
+     <!-- booklet-content1!-->  
+    <div class="lm-container">
+      <img src="art-aynil/AYNIL-booklet1.jpg" alt="booklet">  
+   </div> 
+    <!--  end of booklet-content1!--> 
+      
+        <!-- booklet-content2!-->  
+    <div class="lm-container">
+      <img src="art-aynil/AYNIL-booklet2.jpg" alt="booklet">  
+   </div> 
+    <!--  end of booklet-content2!-->  
+   
+         <!-- booklet-content3!-->  
+    <div class="lm-container">
+      <img src="art-aynil/AYNIL-booklet3.jpg" alt="booklet">  
+   </div> 
+    <!--  end of booklet-content3!--> 
+      
+      
+       <!-- booklet-content4!-->  
+    <div class="lm-container">
+      <img src="art-aynil/AYNIL-booklet4.jpg" alt="booklet">  
+   </div> 
+    <!--  end of booklet-content4!--> 
+      
+  </div> <!-- end of slider wrapper!-->
+        
+  <button class="next-btn" id="aynil-buttonright"><p>❯</p></button>
+</div>   
+ 
 </div>
 
  <!--portfolio.html will appear in contact-container!-->    
@@ -164,4 +217,41 @@
 
   </script>
 
+<!--slider of slider arrows!-->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const sliderWrapper = document.querySelector(".slider-wrapper");
+  const slides = document.querySelectorAll(".lm-container");
+  const prevBtn = document.querySelector(".prev-btn");
+  const nextBtn = document.querySelector(".next-btn");
 
+  let currentIndex = 0;
+
+  function updateSlider() {
+    const slideWidth = slides[0].clientWidth;
+    sliderWrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+
+    // Enable or disable buttons based on the current index
+    prevBtn.disabled = currentIndex === 0;
+    nextBtn.disabled = currentIndex === slides.length - 1;
+  }
+
+  prevBtn.addEventListener("click", () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateSlider();
+    }
+  });
+
+  nextBtn.addEventListener("click", () => {
+    if (currentIndex < slides.length - 1) {
+      currentIndex++;
+      updateSlider();
+    }
+  });
+
+  // Initial setup
+  updateSlider();
+});
+
+</script>
