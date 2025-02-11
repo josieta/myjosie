@@ -153,7 +153,9 @@ color: #1e1818;
 #label-white{
   background-color:#f9f5f0; /*ivory*/  
     }
-
+#label-featured{
+  background-color:#aad9e8; /*blue*/  
+    }
 
 /* Menu Bar */
 
@@ -311,7 +313,7 @@ padding-bottom: 50px;
 .image img {
   width: 100%;
   height: auto;
-  display: block;
+  display: block; 
 }
 
 .overlay{
