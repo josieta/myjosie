@@ -16,6 +16,7 @@
 <link rel="stylesheet" type="text/css" href="style.css"> 
 <link rel="stylesheet" type="text/css" href="style-homepage.css"> 
 <link rel="stylesheet" type="text/css" href="style-portfolio.css"> 
+<link rel="stylesheet" type="text/css" href="style-aboutme.css"> 
     
 
 <!-- font-family: 'Poppins', sans-serif;!-->
@@ -59,7 +60,7 @@
      data-aos-duration="1000">
     
 <div class="cc-title" >
-<h2>Insta Cake – Multiple Designs</h2> 
+<h2>Insta Cake</h2> 
     
 <br>
  
@@ -70,10 +71,59 @@
     
 <br>
 
-<p>Updating...</p>
+<p>Instacake is a client that provides instant cupcake in a card. They love creating various designs for their cards to make them more eye-catching and attract consumers' attention. I've had the opportunity to design some of their cards and other print products.</p>
+    
+<br> <p>One of my highlights was the Alien Birthday Packaging design, for which I was honored to receive the 2023 Signature Award in the Illustration and Original Artwork category.</p>
+    
+<br> <p> Besides that, I also had the chance to create other card concepts, such as Mother’s Day Cake Cards and the Best Friend Cake Kit (a cake for pets).</p>
 </div> 
+    
+   <div class="slider" id="aynil-slider">
+  <button class="prev-btn" id="aynil-buttonleft"><p>❮</p></button>
+        
+  <div class="slider-wrapper">
+      
+     <!-- alien-content1!-->  
+    <div class="lm-container">
+      <img src="art-instacake/alien-3.jpeg" alt="alien card">  
+   </div> 
+    <!--  end of aline-content1!--> 
+      
+        <!-- alien-content2!-->  
+    <div class="lm-container">
+      <img src="art-instacake/alien-1.jpg" alt="alien card">  
+   </div> 
+    <!--  end of alien-content2!-->  
+   
+         <!-- booklet-content3!-->  
+    <div class="lm-container">
+      <img src="art-instacake/alien-2.jpg" alt="alien card">   
+   </div> 
+    <!--  end of alien-content3!--> 
 
-</div>
+      
+  </div> <!-- end of slider wrapper!-->
+        
+  <button class="next-btn" id="aynil-buttonright"><p>❯</p></button>
+</div>  
+
+<img  src="art-instacake/mothersdaycard-floral-set.png" alt="mother's day floral">
+<img  src="art-instacake/mothersdaycard-cupcake-set.png" alt="mother's day cupcake">
+    
+ <div class="cc-flexbox">
+<div class="cc-flexbox-col"><img src="art-instacake/mothersdaycard-floral-5.png" alt="mother's day cake"></div>
+<div class="cc-flexbox-col"><img src="art-instacake/mothersdaycard-cupcake-5.png" alt="mother's day cake"></div>
+    
+</div>  
+  <img src="art-instacake/bestfriend-cakekit.jpg" alt="cake kit">  
+ <div class="cc-flexbox">
+<div class="cc-flexbox-col"><img src="art-instacake/bestfriend-display.jpg" alt="display"></div>
+
+ <div class="cc-flexbox-col"><img src="art-instacake/bestfriend-display2.jpg" alt="display">    
+    
+</div>  
+    
+    </div> </div>
 
  <!--portfolio.html will appear in contact-container!-->    
 <div id="portfoliobox-container" data-aos="fade-up"
@@ -166,3 +216,41 @@
   </script>
 
 
+<!--slider of slider arrows!-->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const sliderWrapper = document.querySelector(".slider-wrapper");
+  const slides = document.querySelectorAll(".lm-container");
+  const prevBtn = document.querySelector(".prev-btn");
+  const nextBtn = document.querySelector(".next-btn");
+
+  let currentIndex = 0;
+
+  function updateSlider() {
+    const slideWidth = slides[0].clientWidth;
+    sliderWrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+
+    // Enable or disable buttons based on the current index
+    prevBtn.disabled = currentIndex === 0;
+    nextBtn.disabled = currentIndex === slides.length - 1;
+  }
+
+  prevBtn.addEventListener("click", () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateSlider();
+    }
+  });
+
+  nextBtn.addEventListener("click", () => {
+    if (currentIndex < slides.length - 1) {
+      currentIndex++;
+      updateSlider();
+    }
+  });
+
+  // Initial setup
+  updateSlider();
+});
+
+</script>
