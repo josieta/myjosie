@@ -444,8 +444,8 @@ margin: 0 auto;
 }
 .quotamark-top img{
 position: absolute;
-width: 170px;
-margin-top: -21px;
+width: 180px;
+margin-top: -24px;
 z-index: 2;
 }
 
@@ -457,8 +457,8 @@ margin: 0 auto;
 }
 .quotamark-bot img{
 position: absolute;
-width: 170px;
-margin-top: -43px;
+width: 180px;
+margin-top: -46px;
 z-index: 2;
 top: 50%; /* Center vertically */
   right: 0; /* Align to the right */
