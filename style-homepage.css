@@ -396,18 +396,19 @@ position: relative;
 margin: 0 auto;
 width: 100%;
 background-color: #1e1818;
-  pointer-events: none;}
+}
 
 .marquee {
 white-space: nowrap;
 margin: 0;
 padding: 0;
-  pointer-events: none;
+
 }
 
 /*running animation coding*/
         .line-one {
             animation: scroll-left 15s linear infinite;
+              pointer-events: none;
         }
 
         .line-two {
@@ -415,6 +416,7 @@ padding: 0;
             justify-content: flex-end; /* Align the text content to the right */
           
             animation: scroll-right 15s linear infinite;
+              pointer-events: none;
         }
 
         @keyframes scroll-right {
