@@ -417,11 +417,26 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  // Handle keyboard input for left and right arrows
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowLeft") {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateSlider();
+      }
+    } else if (e.key === "ArrowRight") {
+      if (currentIndex < slides.length - 1) {
+        currentIndex++;
+        updateSlider();
+      }
+    }
+  });
+
   // Initial setup
   updateSlider();
 });
-
 </script>
+
 
 
 
