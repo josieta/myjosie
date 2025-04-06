@@ -436,10 +436,23 @@
 
 <!--testimonial dots!-->
 <script>
-document.addEventListener('DOMContentLoaded', function () {
+ document.addEventListener('DOMContentLoaded', function () {
   const dots = document.querySelectorAll('.dot');
   const testimonials = document.querySelectorAll('.testimonial-content');
   let currentIndex = 0;
+
+  function setSliderHeight() {
+    // Calculate the height of the tallest testimonial content
+    let maxHeight = 0;
+    testimonials.forEach(testimonial => {
+      maxHeight = Math.max(maxHeight, testimonial.scrollHeight);
+    });
+
+    // Set all testimonial content to the max height
+    testimonials.forEach(testimonial => {
+      testimonial.style.height = `${maxHeight}px`;
+    });
+  }
 
   function updateSlider(index) {
     // Hide all testimonials
@@ -475,6 +488,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // Initialize the slider with the first testimonial
+  setSliderHeight(); // Set the correct height before initializing the first slide
   updateSlider(currentIndex);
 });
 
