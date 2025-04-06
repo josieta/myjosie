@@ -439,6 +439,7 @@
  document.addEventListener('DOMContentLoaded', function () {
   const dots = document.querySelectorAll('.dot');
   const testimonials = document.querySelectorAll('.testimonial-content');
+  const testimonialWrapper = document.querySelector('.testimonial-wrapper');
   let currentIndex = 0;
 
   function setSliderHeight() {
@@ -455,10 +456,11 @@
   }
 
   function updateSlider(index) {
-    // Hide all testimonials
-    testimonials.forEach((testimonial, i) => {
-      testimonial.style.display = (i === index) ? 'block' : 'none';
-    });
+    // Slide testimonials by shifting the testimonial wrapper using translateX
+    const slideWidth = testimonials[0].offsetWidth; // Get the width of one slide
+
+    // Set the translateX to move the slider
+    testimonialWrapper.style.transform = `translateX(-${slideWidth * index}px)`;
 
     // Update dot states
     dots.forEach((dot, i) => {
