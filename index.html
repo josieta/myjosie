@@ -221,7 +221,7 @@
 <div class="wave-top"></div>
  
  <!--persona section !-->   
- <div id="bg-mypersona">
+ <div id="bg-mypersona" contenteditable="true">
 <div class="mypersona-container1">  
     
     <div class="mypersona-col"><img src="images/symbol-yellowsparklingstar.png" alt="yellow sparkling star" id="symbol1" class="pulse3"></div>
@@ -435,19 +435,47 @@
     </script>
 
 <!--testimonial dots!-->
+
+
 <script>
   const wrapper = document.querySelector('.testimonial-wrapper');
   const dots = document.querySelectorAll('.dot');
 
-  dots.forEach(dot => {
+  let currentIndex = 0;
+
+  function activateDot(index) {
+    wrapper.style.transform = `translateX(-${index * 100}%)`;
+
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[index].classList.add('active');
+    dots[index].focus(); // optional: focus the newly active dot
+
+    currentIndex = index;
+  }
+
+  dots.forEach((dot, index) => {
     dot.addEventListener('click', () => {
-      const index = dot.getAttribute('data-index');
-      // Move the wrapper to the correct position
-      wrapper.style.transform = `translateX(-${index * 100}%)`;
-      
-      // Update active class on dots
-      dots.forEach(d => d.classList.remove('active'));
-      dot.classList.add('active');
+      activateDot(index);
+    });
+
+    dot.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        activateDot(index);
+      }
+
+      // Handle Arrow Keys
+      if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        const nextIndex = (index + 1) % dots.length;
+        activateDot(nextIndex);
+      }
+
+      if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        const prevIndex = (index - 1 + dots.length) % dots.length;
+        activateDot(prevIndex);
+      }
     });
   });
 </script>
