@@ -234,7 +234,7 @@
  
 <!-- running text !-->
 
-<div class="marquee-container" id="mydiv">
+<div class="marquee-container">
         <!-- First Line -->
         <div class="marquee line-one">
             <h1> QUICK LEARNER * friendly * DESIGN DREAMER * cute * 🤍 * IMAGINATIVE * creative * OPTIMISTIC * team player * QUIRKY * passionate * PLAYFUL * thoughtful * CURIOUS * open-minded </h1>
@@ -436,20 +436,48 @@
 
 <!--testimonial dots!-->
 <script>
-  const wrapper = document.querySelector('.testimonial-wrapper');
+document.addEventListener('DOMContentLoaded', function () {
   const dots = document.querySelectorAll('.dot');
+  const testimonials = document.querySelectorAll('.testimonial-content');
+  let currentIndex = 0;
 
+  function updateSlider(index) {
+    // Hide all testimonials
+    testimonials.forEach((testimonial, i) => {
+      testimonial.style.display = (i === index) ? 'block' : 'none';
+    });
+
+    // Update dot states
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === index);
+    });
+
+    currentIndex = index;
+  }
+
+  // Click event for dots
   dots.forEach(dot => {
-    dot.addEventListener('click', () => {
-      const index = dot.getAttribute('data-index');
-      // Move the wrapper to the correct position
-      wrapper.style.transform = `translateX(-${index * 100}%)`;
-      
-      // Update active class on dots
-      dots.forEach(d => d.classList.remove('active'));
-      dot.classList.add('active');
+    dot.addEventListener('click', function () {
+      const index = parseInt(this.getAttribute('data-index'));
+      updateSlider(index);
     });
   });
+
+  // Keydown event for left and right arrows
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'ArrowLeft') {
+      currentIndex = (currentIndex === 0) ? testimonials.length - 1 : currentIndex - 1;
+      updateSlider(currentIndex);
+    } else if (event.key === 'ArrowRight') {
+      currentIndex = (currentIndex === testimonials.length - 1) ? 0 : currentIndex + 1;
+      updateSlider(currentIndex);
+    }
+  });
+
+  // Initialize the slider with the first testimonial
+  updateSlider(currentIndex);
+});
+
 </script>
 
 
