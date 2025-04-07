@@ -390,6 +390,14 @@ margin-top: 30px;
 }
 
 /*my persona running text*/
+.marquee-container {
+overflow-x: hidden;
+position: relative;
+margin: 0 auto;
+width: 100%;
+background-color: #1e1818;
+}
+
 
 
 
