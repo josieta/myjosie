@@ -402,10 +402,12 @@ background-color: #1e1818;
 white-space: nowrap;
 margin: 0;
 padding: 0;
+pointer-events: none;
+user-select: none;
 }
 
 .marquee:focus {
-  outline: none;
+  outline: none !important;
 }
 
 /*running animation coding*/
