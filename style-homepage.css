@@ -404,44 +404,8 @@ margin: 0;
 padding: 0;
 }
 
-.marquee:focus {
-  outline: none !important;
-}
 
-.marquee h1 {
-  pointer-events: none;
-  user-select: none;
-}
 
-/*running animation coding*/
-        .line-one {
-            animation: scroll-left 15s linear infinite;
-     
-        }
-
-        .line-two {
-             display: flex; /* Use flexbox to manipulate text position */
-            justify-content: flex-end; /* Align the text content to the right */
-            animation: scroll-right 15s linear infinite;
-        
-        }
-
-        @keyframes scroll-right {
-            100% {
-                transform: translateX(-50%);
-            }
-            100% {
-                transform: translateX(100%);
-            }
-        }
-        @keyframes scroll-left {
-            100% {
-                transform: translateX(50%);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
-        }
 /*Artwork section*/
 
 #bg-artwork{
