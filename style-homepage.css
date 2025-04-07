@@ -422,7 +422,6 @@ padding: 0;
         .line-two {
              display: flex; /* Use flexbox to manipulate text position */
             justify-content: flex-end; /* Align the text content to the right */
-          
             animation: scroll-right 15s linear infinite;
         
         }
