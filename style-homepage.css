@@ -487,13 +487,16 @@ text-align: center;
 .testimonial-container {
       
        margin: 0 auto;
-      overflow: hidden;
       position: relative;
+    }
+
+    .testimonial-viewport {
+      overflow: hidden;
+      margin-bottom: 50px;
     }
 
     .testimonial-wrapper {
       display: flex;
-      margin-bottom: 50px; 
       transition: transform 0.5s ease-in-out;
     }
 
@@ -926,9 +929,9 @@ padding: 70px 0 80px 0;
 padding-bottom: 25px;
 }    
     
-.testimonial-wrapper {
-margin-bottom: 40px; 
-}   
+.testimonial-viewport {
+margin-bottom: 40px;
+}
     
 #bg-sa{
 padding-top: 70px; /*2.5cm scale to 1.5cm*/
